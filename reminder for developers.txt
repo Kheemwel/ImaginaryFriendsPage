@@ -1,0 +1,5 @@
+file naming in html and css:
+    - use hyphen (-) to separate words
+
+file naming in javascript:
+    - use underscore (_) to separate words
