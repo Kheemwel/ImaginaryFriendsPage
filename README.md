@@ -1,2 +1,3 @@
-# ImaginaryFriends-Website
+# Official Website of Imaginary Friends
+
  
