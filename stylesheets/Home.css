@@ -1,0 +1,904 @@
+
+body{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background: #3F3351;
+}
+
+/*Imaginary Friends Homepage Logo*/
+.logo img {
+    padding-left: 100px;
+    height: 30px;
+    width: 55px;
+    height: 55px;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+/*Imaginary Friends Navigation Bar*/
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+  
+.navbar {
+    background-color: transparent;
+}
+  
+.nav-list {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+}
+  
+.nav-item {
+    margin-left: 10px;
+    position: relative;
+}
+  
+.nav-item a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px;
+}
+  
+.sub-nav-list {
+    list-style: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    display: none;
+    background-color: #3F3351;
+    padding: 10px;
+}
+  
+.sub-nav-item {
+    margin-top: 5px;
+}
+  
+.nav-item:hover .sub-nav-list {
+    display: block;
+}
+
+/*Imaginary Friends Homepage Title*/
+#title{
+    position: absolute;
+    width: 497px;
+    height: 78px;
+    left: 100px;
+    top: 150px;
+    
+    font-family: 'Griffy';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 64px;
+    line-height: 86px;
+    
+    color: #FFFFFF;
+}   
+
+/*Imaginary Friends Homepage Description*/
+
+#description{
+    position: absolute;
+    width: 497px;
+    height: 87px;
+    left: 100px;
+    top: 290px;
+
+    font-family: 'Song Myung';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+
+    color: #FFFFFF;
+}
+
+/*Imaginary Friends Homepage Download Button*/
+
+#btnDownload{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 15px 25px;
+    gap: 3px;
+    
+    position: absolute;
+    width: 193px;
+    height: 54px;
+    left: 100px;
+    top: 395px;
+    
+    background: #8461B5;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 15px;
+
+/*LABEL*/
+
+    font-family: 'Song Myung';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 21px;
+
+    color: #FFFFFF;
+
+
+    /* Inside auto layout */
+
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+}
+
+/*Tree with Swing GIF*/
+#treeswing{
+    position: absolute;
+    width: 900px;
+    height: 850px;
+    left: 550px;
+    top: 177px;
+
+    mix-blend-mode: multiply;
+}
+
+/*Watch Trailer Part*/
+#trailerTitle{
+    position: absolute;
+    width: 321px;
+    height: 48px;
+    left: 561px;
+    top: 1050px;
+
+    font-family: 'Griffy';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 48px;
+    line-height: 65px;
+    text-align: center;
+
+    color: #FFFFFF;
+}
+
+/*Watch Trailer Description*/
+#trailerDescription{
+    position: absolute;
+    width: 577px;
+    height: 47px;
+    left: 436px;
+    top: 1150px;
+
+    font-family: 'Song Myung';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    text-align: center;
+
+    color: #FFFFFF;
+}
+
+/*Div Frame 1 (Main Frame)*/
+#trailerFrame1{
+    position: absolute;
+    width: 1240px;
+    height: 389px;
+    left: 100px;
+    top: 1280px;
+
+    background: linear-gradient(180deg, #AD5389 0%, #3C1053 100%);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 30px;
+}
+
+/*Trailer Frame Collection 1 After the Big Rectangle*/
+#leftArrow{
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    left: 200px;
+    top: 1930px;
+}
+
+#rightArrow{
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    left: 1200px;
+    top: 1930px;
+}
+
+#trailerRectangle1{
+    position: absolute;
+    width: 169px;
+    height: 202px;
+    left: 278px;
+    top: 1852px;
+
+    background: linear-gradient(179.88deg, #AD5389 0.1%, #3C1053 99.9%);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 30px;
+}
+
+#trailerRectangle2{
+    position: absolute;
+    width: 169px;
+    height: 202px;
+    left: 520px;
+    top: 1852px;
+
+    background: linear-gradient(179.88deg, #AD5389 0.1%, #3C1053 99.9%);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 30px;
+}
+
+#trailerRectangle3{
+    position: absolute;
+    width: 169px;
+    height: 202px;
+    left: 761px;
+    top: 1852px;
+
+    background: linear-gradient(179.88deg, #AD5389 0.1%, #3C1053 99.9%);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 30px;
+}
+
+#trailerRectangle4{
+    position: absolute;
+    width: 169px;
+    height: 202px;
+    left: 1002px;
+    top: 1852px;
+
+    background: linear-gradient(179.88deg, #AD5389 0.1%, #3C1053 99.9%);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 30px;
+}
+/******************************************************************************/
+
+
+/*Origins Section in Homepage*/
+
+#originFrame{
+    position: absolute;
+    width: 1240px;
+    height: 389px;
+    left: 100px;
+    top: 2318px;
+
+    background: linear-gradient(180deg, #AD5389 0%, #3C1053 100%);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 30px;
+}
+
+#originTitle{
+    position: absolute;
+    width: 318.43px;
+    height: 48px;
+    left: 169.44px;
+    top: 2360px;
+
+    font-family: 'Griffy';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 48px;
+    line-height: 65px;
+
+    color: #FFFFFF;
+}
+
+#originDescription{
+    position: absolute;
+    width: 435.49px;
+    height: 79.44px;
+    left: 169.44px;
+    top: 2472px;
+
+    font-family: 'Song Myung';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+
+    color: #FFFFFF;
+}
+
+#btnReadMore{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 15px 25px;
+    gap: 3px;
+
+    position: absolute;
+    width: 131.94px;
+    height: 49px;
+    left: 169.44px;
+    top: 2565px;
+
+    background: #8461B5;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 15px;
+
+    font-family: 'Song Myung';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 21px;
+
+    color: #FFFFFF;
+}
+
+/*************************************************************/
+
+
+/*Gameplay Section in Homepage*/
+#gameplayTitle{
+    position: absolute;
+    width: 263px;
+    height: 48px;
+    left: 583px;
+    top: 2884px;
+
+    font-family: 'Griffy';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 48px;
+    line-height: 65px;
+    text-align: center;
+
+    color: #FFFFFF;
+}
+
+#gameplayDescription{
+    position: absolute;
+    width: 577px;
+    height: 47px;
+    left: 436px;
+    top: 2990px;
+
+    font-family: 'Song Myung';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    text-align: center;
+
+    color: #FFFFFF;
+}
+
+#btnGameplayViewMore{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 15px 25px;
+    gap: 3px;
+
+    position: absolute;
+    width: 133px;
+    height: 49px;
+    left: 658px;
+    top: 3070px;
+
+    background: #8461B5;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 15px;
+
+    font-family: 'Song Myung';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 21px;
+
+    color: #FFFFFF;
+}
+
+/*CHARACTER SECTION*/
+#characterFrame{
+    position: absolute;
+    width: 1240px;
+    height: 389px;
+    left: 100px;
+    top: 3343px;
+    
+    background: linear-gradient(113.53deg, #AD5389 31.77%, #3C1053 90.95%);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 30px; 
+}
+
+#characterTitle{
+    position: absolute;
+    width: 318.43px;
+    height: 48px;
+    left: 169.44px;
+    top: 3380px;
+
+    font-family: 'Griffy';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 48px;
+    line-height: 65px;
+
+    color: #FFFFFF;
+}
+
+#characterDescription{
+    position: absolute;
+    width: 435.49px;
+    height: 79.44px;
+    left: 169.44px;
+    top: 3485px;
+    
+    font-family: 'Song Myung';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    
+    color: #FFFFFF; 
+}
+
+#btnCharacterViewMore{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 15px 25px;
+    gap: 3px;
+
+    position: absolute;
+    width: 131.94px;
+    height: 49px;
+    left: 169.44px;
+    top: 3575px;
+
+    background: #8461B5;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 15px;
+
+    font-family: 'Song Myung';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 21px;
+
+    color: #FFFFFF;
+}
+
+/*FANZONE SECTION*/
+#fanzoneTitle{
+    position: absolute;
+    width: 263px;
+    height: 48px;
+    left: 594px;
+    top: 3909px;
+    
+    font-family: 'Griffy';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 54px;
+    text-align: center;
+    
+    color: #FFFFFF;
+}
+
+#fanzoneDescription{
+    position: absolute;
+    width: 577px;
+    height: 90px;
+    left: 447px;
+    top: 3988px;
+    
+    font-family: 'Song Myung';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    text-align: center;
+    
+    color: #FFFFFF;
+    
+}
+
+#leftArrowFZ{
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    left: 200px;
+    top: 4170px;
+}
+#rightArrowFZ{
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    left: 1200px;
+    top: 4170px;   
+}
+
+#fanzoneRectangle1{
+    position: absolute;
+    width: 169px;
+    height: 202px;
+    left: 278px;
+    top: 4092px;
+    
+    background: linear-gradient(179.88deg, #AD5389 0.1%, #3C1053 99.9%);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 30px;    
+}
+
+#fanzoneRectangle2{
+    position: absolute;
+    width: 169px;
+    height: 202px;
+    left: 520px;
+    top: 4092px;
+    
+    background: linear-gradient(179.88deg, #AD5389 0.1%, #3C1053 99.9%);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 30px;    
+}
+
+#fanzoneRectangle3{
+    position: absolute;
+    width: 169px;
+    height: 202px;
+    left: 761px;
+    top: 4092px;
+    
+    background: linear-gradient(179.88deg, #AD5389 0.1%, #3C1053 99.9%);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 30px;
+}
+
+#fanzoneRectangle4{
+    position: absolute;
+    width: 169px;
+    height: 202px;
+    left: 1002px;
+    top: 4092px;
+    
+    background: linear-gradient(179.88deg, #AD5389 0.1%, #3C1053 99.9%);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 30px;
+}
+
+#btnFanzoneViewMore{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 15px 25px;
+    gap: 3px;
+    
+    position: absolute;
+    width: 133px;
+    height: 49px;
+    left: 669px;
+    top: 4357px;
+    
+    background: #8461B5;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 15px;
+
+    font-family: 'Song Myung';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 21px;
+    
+    color: #FFFFFF;
+}
+
+/*ABOUT US SECTION*/
+#aboutUsFrame{
+    position: absolute;
+    width: 1240px;
+    height: 389px;
+    left: 100px;
+    top: 4630px;
+    
+    background: linear-gradient(260.62deg, #AD5389 32.6%, #3C1053 90.52%);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 30px;    
+}
+
+#aboutUsTitle{
+    position: absolute;
+    width: 318.43px;
+    height: 48px;
+    left: 169.44px;
+    top: 4680px;
+    
+    font-family: 'Griffy';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 48px;
+    line-height: 65px;
+    
+    color: #FFFFFF;
+}
+
+#aboutUsDescription{
+    position: absolute;
+    width: 435.49px;
+    height: 79.44px;
+    left: 169.44px;
+    top: 4780px;
+    
+    font-family: 'Song Myung';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    
+    color: #FFFFFF;
+}
+
+#btnAboutUsViewMore{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 15px 25px;
+    gap: 3px;
+    
+    position: absolute;
+    width: 131.94px;
+    height: 49px;
+    left: 169.44px;
+    top: 4875px;
+    
+    background: #8461B5;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 15px;
+    
+    font-family: 'Song Myung';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 21px;
+    
+    color: #FFFFFF;
+}
+
+
+/*       FOOTER SECTION      */
+
+#footerFrame{
+    position: absolute;
+    width:100%;
+    height: 350px;
+    left: 0px;
+    top: 5165px;
+  
+    background: #1F1D36;
+}
+
+#footerLogo{
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    left: 130px;
+    top: 5200px;
+    
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+#footerDescription{
+    position: absolute;
+    width: 233px;
+    height: 60px;
+    left: 50px;
+    top: 5255px;
+    
+    font-family: 'Song Myung';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 18px;
+    
+    color: #FFFFFF;
+    
+}
+
+#footerCopyright{
+    position: absolute;
+    width: 233px;
+    height: 60px;
+    left: 50px;
+    top: 5300px;
+    
+    font-family: 'Song Myung';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 18px;
+    
+    color: #FFFFFF;
+    
+}
+
+/*MENU SECTION*/
+#footerMenu{
+    position: absolute;
+    width: 211px;
+    height: 35px;
+    left: 445px;
+    top: 5190px;
+    
+    font-family: 'Song Myung';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 30px;
+    
+    color: #FFFFFF;
+}
+
+#footerHome{
+    position: absolute;
+    width: 48px;
+    height: 23px;
+    left: 445px;
+    top: 5255px;
+    
+    font-family: 'Song Myung';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    
+    color: #FFFFFF;
+}
+
+#footerCharacters{
+    position: absolute;
+    width: 48px;
+    height: 23px;
+    left: 445px;
+    top: 5285px;
+    
+    font-family: 'Song Myung';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    
+    color: #FFFFFF;
+}
+
+#footerFanzone{
+    position: absolute;
+    width: 48px;
+    height: 23px;
+    left: 445px;
+    top: 5315px;
+    
+    font-family: 'Song Myung';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    
+    color: #FFFFFF;
+}
+
+#footerAboutUs{
+    position: absolute;
+    width: 48px;
+    height: 23px;
+    left: 445px;
+    top: 5345px;
+    
+    font-family: 'Song Myung';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    
+    color: #FFFFFF;
+}
+
+/*CONTACT US SECTION*/
+#footerContacts{
+    position: absolute;
+    width: 211px;
+    height: 35px;
+    left: 695px;
+    top: 5190px;
+    
+    font-family: 'Song Myung';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 30px;
+    
+    color: #FFFFFF;
+}
+
+#footerEmail{
+    position: absolute;
+    width: 48px;
+    height: 23px;
+    left: 695px;
+    top: 5255px;
+    
+    font-family: 'Song Myung';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    
+    color: #FFFFFF;
+}
+
+#footerContactNo{
+    position: absolute;
+    width: 48px;
+    height: 23px;
+    left: 695px;
+    top: 5285px;
+    
+    font-family: 'Song Myung';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    
+    color: #FFFFFF;
+}
+
+
+/*FOLLOW US SECTION*/
+#footerFollowUs{
+    position: absolute;
+    width: 211px;
+    height: 35px;
+    left: 995px;
+    top: 5190px;
+    
+    font-family: 'Song Myung';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 30px;
+    
+    color: #FFFFFF;
+}
+
+#iconFB{
+position: absolute;
+width: 30px;
+height: 30px;
+left:  995px;
+top: 5255px;
+}
+
+#iconIG{
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    left:  1050px;
+    top: 5255px;
+}
+
+#iconTwitter{
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    left:  1110px;
+    top: 5255px;
+}
+
+#iconDiscord{
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    left:  1170px;
+    top: 5255px;
+}
