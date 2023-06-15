@@ -1,3 +1,0 @@
-function showAlert() {
-    alert("Hi!");
-}

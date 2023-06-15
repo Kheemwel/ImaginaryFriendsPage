@@ -1,0 +1,659 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+  }
+  
+  body{
+      background: #3F3351;
+  }
+  
+  .container {
+    max-width: 1440px;
+    width: 100%;
+    margin: auto;
+  }
+
+  #container-opening{
+    max-width: 1440px;
+    width: 100%;
+    margin: auto;
+  }
+  
+  /*Imaginary Friends Logo*/
+  .logo img {
+      height: 30px;
+      margin-left: 4rem;
+      width: 55px;
+      height: 55px;
+      filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  }
+  
+  
+  
+  /*Imaginary Friends Navigation Bar*/
+  .nav-container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px;
+      max-width: 1440px;
+      width: 100%;
+  }
+    
+  .navbar {
+      background-color: transparent;
+      padding-right: 100px;
+      max-width: 1440px; 
+  }
+    
+  .nav-list {
+      list-style: none;
+      display: flex;
+      align-items: center;
+      padding: 0;
+      margin: 0;
+  }
+    
+  .nav-item {
+      margin-left: 10px;
+  }
+    
+  .nav-item a {
+      color: #fff;
+      text-decoration: none;
+      padding: 10px;
+  }
+    
+  .sub-nav-list {
+      list-style: none;
+      top: 100%;
+      left: 0;
+      display: none;
+      background-color: #3F3351;
+      padding: 10px;
+  }
+    
+  .sub-nav-item {
+      margin-top: 5px;
+  }
+    
+  .nav-item:hover .sub-nav-list {
+      display: block;
+  }
+  
+  /*       FOOTER SECTION      */
+  
+#footer-frame {
+    background: #1F1D36;
+    display: flex;
+    direction: row;
+    max-width: 100%;
+}
+
+.footer-company{
+  padding: 2rem;
+  width: 25%;
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-details{
+  display: flex;
+  flex-direction: row;
+}
+
+.footer-menu{
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-menu{
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-contact{
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-follow-us{
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.follow-us-icons{
+  display: flex;
+  flex-direction: row;
+}
+  
+  #footer-logo {
+    width: 3rem;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  }
+  
+  #footer-description {
+    font-family: 'Song Myung';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 18px;
+    color: #FFFFFF;
+  }
+
+  #footer-copyright{
+    font-family: 'Song Myung';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 18px;
+    color: #FFFFFF;
+  }
+  
+  /* MENU SECTION */
+  #footer-menu {
+    font-family: 'Song Myung';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 30px;
+    color: #FFFFFF;
+  }
+  
+  #footer-home,
+  #footer-characters,
+  #footer-fanzone,
+  #footer-about-us {
+    font-family: 'Song Myung';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    color: #FFFFFF;
+  }
+  
+  
+  /* CONTACT US SECTION */
+  #footer-contacts {
+    font-family: 'Song Myung';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 30px;
+    color: #FFFFFF;
+  }
+  
+  #footer-email,
+  #footer-contact-no {
+    font-family: 'Song Myung';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    color: #FFFFFF;
+  }
+  
+  /* FOLLOW US SECTION */
+  #footer-follow-us-title {
+    font-family: 'Song Myung';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 30px;
+    color: #FFFFFF;
+  }
+
+/*Imaginary Friends Homepage Title*/
+/**********OPENING***********/
+
+/*Tree with Swing GIF*/
+#treeswing{
+    mix-blend-mode: multiply;
+}
+
+.opening-frame{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-right: 2.5rem;
+}
+
+.if-details{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 2rem;
+}
+
+#title{    
+    font-family: 'Griffy';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 60px;
+    line-height: 86px;
+    
+    color: #FFFFFF;
+}   
+
+/*Imaginary Friends Homepage Description*/
+
+#title-description{
+    font-family: 'Song Myung';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+
+    color: #FFFFFF;
+}
+
+/*Imaginary Friends Homepage Download Button*/
+
+#btn-download{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 1rem;
+    padding: 15px 25px;
+    gap: 3px;
+    
+    background: #8461B5;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 15px;
+    text-decoration: none;
+
+    /*LABEL*/
+    font-family: 'Song Myung';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 21px;
+
+    color: #FFFFFF;
+
+
+    /* Inside auto layout */
+
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+}
+
+
+
+/*Watch Trailer Part*/
+#plot-title{
+    margin-top: 5rem;
+    font-family: 'Griffy';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 65px;
+    text-align: center;
+
+    color: #FFFFFF;
+}
+
+/*Watch Trailer Description*/
+#plot-description{
+    font-family: 'Song Myung';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 25px;
+    line-height: 20px;
+    text-align: center;
+
+    color: #FFFFFF;
+}
+
+/*Div Frame 1 (Main Frame)*/
+#plot-frame{
+    display: flex;
+    flex-direction: column;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+    padding-left: 10rem;
+    padding-right: 10rem;
+    background: linear-gradient(180deg, #AD5389 0%, #3C1053 100%);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 30px;
+}
+
+.plot-container{
+    display: flex;
+    flex-direction: column;
+    margin: 2rem 5rem;
+}
+
+
+/******************************************************************************/
+
+/*CHARACTERS*/
+#character-title{
+    padding: 2rem;
+    font-family: 'Griffy';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 20px;
+    text-align: center;
+
+    color: #FFFFFF;
+}
+
+.character-details{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0 2rem;
+}
+
+.character-image{
+    max-width: 100%;
+    height: auto;
+    margin:auto;
+    display: block;
+    background: linear-gradient(179.88deg, #AD5389 0.1%, #3C1053 99.9%);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 15px;
+}
+.character-image img{
+    width: 20rem;
+    height: 20rem;
+}
+
+.character-name{
+    font-family: 'Song Myung';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 20px;
+    text-align: center;
+
+    color: #FFFFFF;
+}
+
+.character-description{
+    padding-top: 1rem;
+    padding-bottom: 2rem;
+    font-family: 'Song Myung';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 20px;
+    text-align: center;
+
+    color: #FFFFFF;
+}
+
+
+/*ABOUT US*/
+.about-us-frame{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10rem 20rem;
+}
+
+#about-us-title{
+    padding-top: 2rem;
+    font-family: 'Griffy';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 20px;
+    text-align: center;
+
+    color: #FFFFFF;
+}
+
+#about-us-description{
+    padding-top: 1rem;
+    font-family: 'Song Myung';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 20px;
+    text-align: center;
+
+    color: #FFFFFF;
+}
+
+
+#btn-about-us-view{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 1rem;
+    padding: 15px 25px;
+    gap: 3px;
+    
+    background: #8461B5;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 15px;
+    text-decoration: none;
+
+    /*LABEL*/
+    font-family: 'Song Myung';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 21px;
+
+    color: #FFFFFF;
+
+
+    /* Inside auto layout */
+
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+}
+
+/*BEHIND THE NAME OF THE CHARACTERS*/
+
+.character-title{
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+    font-family: 'Griffy';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 20px;
+    text-align: center;
+
+    color: #FFFFFF;
+}
+
+.details-frame{
+    padding: 0 3rem;
+    max-width: 100%;
+    height: auto;
+    display: block;
+    background: linear-gradient(179.88deg, #AD5389 0.1%, #3C1053 99.9%);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 15px;
+    
+    margin: 5rem auto;
+    text-align: center;
+}
+
+.behind-section{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+}
+
+.behind-character-title{
+    padding-top: 5rem;
+    padding-bottom: 1rem;
+    font-family: 'Griffy';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 35px;
+    line-height: 20px;
+    text-align: center;
+
+    color: #FFFFFF;
+}
+
+.behind-character-description{
+    padding-bottom: 5rem;
+    font-family: 'Song Myung';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 25px;
+    line-height: 20px;
+    text-align: center;
+
+    color: #FFFFFF;
+}
+
+.behind-character-image{
+    max-width: 100%;
+    padding: 0%;
+    height: auto;
+    display: block;
+}
+
+.behind-character-image img{
+    width: 45rem;
+    height: 14rem;
+    border-radius: 15px;
+    margin: 5rem;
+}
+
+
+@media (max-width: 480px) {
+    .container{
+      width: 100%;
+    }
+  
+    body{
+      min-width: 100%;
+    }
+  
+    .logo img {
+      /* padding-left: 20px; */
+      /* margin: 10%; */
+    }
+
+    #plot-title{
+        margin: 10%;
+    }
+
+    #plot-frame{
+        padding: 10%;
+    }
+    .plot-container{
+      margin: 10%;
+    }
+
+    #character-title{
+        margin: 10%;
+    }
+    .about-us-frame{
+        padding: 10%;
+    }
+    #footer-frame{
+      flex-direction: column;
+    }
+  
+    .footer-company{
+      width: 100%;
+    }
+    
+    #footer-copyright{
+      text-align: center;
+    }
+  
+    .footer-details{
+      flex-direction: row;
+    }
+    .follow-us-icons{
+      flex-direction: column;
+    }
+  
+      #footer-frame {
+        position: static;
+        height: auto;
+        padding: 30px 0;
+      }
+    
+      #footer-logo {
+        margin: 0 auto;
+      }
+  
+      #footer-menu,
+      #footer-contacts,
+      #footer-follow-us {
+        display: none;
+      }
+  
+      .navbar {
+        padding-right: 10px;
+      }
+  
+      .founder{
+        flex-direction: column;
+      }
+
+      #container-opening {
+        flex-direction: row;
+      }
+    
+      .opening-frame {
+        flex-direction: row;
+      }
+    
+      .if-details {
+        flex: 1;
+      }
+      
+      #treeswing {
+        display: none;
+      }
+      .character-title{
+        font-size: 35px;
+      }
+    
+  }
+  
+  @media (max-width: 768px) {
+    .container{
+      width: 100%;
+    }
+  
+    body{
+      width: 100%;
+    }
+  
+    .logo img {
+      /* width: 100%; */
+    }
+    #footer-frame {
+        position: static;
+        height: auto;
+        padding: 30px 0;
+    }
+    
+    #footer-logo {
+        margin: 0 auto;
+    }
+  
+    #footer-menu,
+    #footer-contacts,
+    #footer-follow-us {
+        display: none;
+    }
+  
+    .navbar {
+        padding-right: 10px;
+    }
+}
+
