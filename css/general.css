@@ -1,0 +1,28 @@
+:root {
+    --jacarta: #3f3351;
+    --dark-gunmetal: #1f1d36;
+    --mystic-maroon: #AD5389;
+    --russian-violet: #3C1053;
+    --blue-violet: #8461b5;
+    --purple-gradient: linear-gradient(to bottom right, var(--mystic-maroon), var(--russian-violet));
+}
+
+@font-face {
+    font-family: "Giffy";
+    src: url("/assets/fonts/Griffy-Regular.ttf");
+}
+
+@font-face {
+    font-family: "SongMyung";
+    src: url("/assets/fonts/SongMyung-Regular.ttf");
+}
+
+* {
+    box-sizing: border-box;
+}
+    
+
+body {
+    background-color: var(--jacarta);
+    font-family: "SongMyung";
+}
