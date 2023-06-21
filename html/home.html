@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://fonts.googleapis.com/css?family=Griffy' rel='stylesheet'>
+    <link rel="stylesheet" type="text/css" href="/css/home.css">
+    <title>Imaginary Friends | Home</title>
+</head>
+<body>
+    <!-- NAVIGATION BAR -->
+    <div class="nav-container">
+      <div class="logo">
+          <img src="/assets/images/IF Logo.png" alt="Imaginary Friends Logo">
+      </div>
+      <nav class="navbar">
+        <ul class="nav-list">
+          <li class="nav-item"><a href="home.html">Home</a></li>
+          <li class="nav-item"><a href="about-us.html">About Us</a></li>
+        </ul>
+      </nav>
+  </div>
+  <!------------------------------------------------------------------>
+
+    
+    
+  <!--OPENING MESSAGE W/ GAME DOWNLOAD BUTTON-->
+  <div id="container-opening">
+    <div class="opening-frame">
+      <div class="if-details">
+        <p id="title">Imaginary Friends</p>
+        <p id="title-description"> You are the child in this supernatural visual novel. You must survive and keep your sanity and happiness. For you to keep it, you must talk and befriend your new imaginary friends. But, be warned, not everything is what it seems. Now, can you survive and keep your sanity and happiness? Will you make the right choices and have a happy ending? Download the game now to find out! </p>
+        <a href="./assets/com.springstudios.imaginaryfriends-release.apk" download>
+        <button id="btn-download"> Download APK</button>
+        </a>
+      </div>
+        <img id="treeswing" src="/assets/images/TreeSwing.gif" alt="Tree Swing GIF">
+    </div>
+  </div>
+
+    <!--PLOT SECTION-->
+    <p id="plot-title">Plot</p>
+    <div class="plot-container">
+      <div id="plot-frame">
+      <p id="plot-description">The protagonist, an 8-year-old child, just moved into their new house. The child suffers from a verbally abusive mother and a neglectful father, living with many pains, anxiety, and depression. Suffering from many hardships at a young age, the child’s sanity and happiness is at risk. Thankfully though, the child met many imaginary friends that will help the child be happier and sane, but be careful, not everything is what it seems.</p>
+      </div>
+    </div>
+    
+    <!--CHARACTERS-->
+    <div class="container">
+      <p id="character-title"> Characters </p>
+
+        <div class="character-details">
+          <div class="character-image">
+            <img src="/assets/images/ali.webp" alt="Imaginary Friends Logo">
+            <p class="character-name"> Ali </p>
+            <p class="character-description"> The Dog Idol</p>
+          </div>
+
+          <div class="character-image">
+            <img src="/assets/images/kimmy.png" alt="Imaginary Friends Logo">
+            <p class="character-name"> Kimmy </p>
+            <p class="character-description"> The Blue Alien</p>
+          </div>
+
+          <div class="character-image">
+            <img src="/assets/images/jayem.png" alt="Imaginary Friends Logo">
+            <p class="character-name"> Jayem </p>
+            <p class="character-description"> The Psychopomp</p>
+          </div>
+
+          <div class="character-image">
+            <img src="/assets/images/jennie.webp" alt="Imaginary Friends Logo">
+            <p class="character-name"> Jennie </p>
+            <p class="character-description"> The Cat Idol</p>
+          </div>
+        </div>
+    </div>
+
+    <script>
+      var myIndex = 0;
+      carousel();
+
+      function carousel() {
+        var i;
+        var x = document.getElementsByClassName("character-image");
+        for (i = 0; i < x.length; i++) {
+          x[i].style.display = "none";  
+        }
+        myIndex++;
+        if (myIndex > x.length) {myIndex = 1}    
+        x[myIndex-1].style.display = "block";  
+        setTimeout(carousel, 2000); // Change image every 2 seconds
+      }
+    </script>
+
+    <!--ABOUT US SECTION-->
+    <div class="about-us-frame">
+      <p id="about-us-title"> About Us</p>
+      <p id="about-us-description">SPRING STUDIOS created their very first game, a visual novel game which is the “Imaginary Friends.” Meet the people who created this game.</p>
+
+      
+      <button id="btn-about-us-view"> 
+        <a href="./AboutUs.html">View More</a>
+      </button>
+    </div>
+
+    <!--BEHIND THE NAME OF THE CHARACTERS-->
+    <div class="container">
+      <p class="character-title"> Behind the Name of the Characters </p>
+
+      <div class="behind-section">
+        <div class="details-frame">
+          <p class="behind-character-title"> Iris</p>
+          <p class="behind-character-description">Iris’ name is of Greek origin, and it means rainbow.</p>
+        </div>
+
+      </div>
+
+      <!----------------------------->
+
+      <div class="behind-section">
+        <div class="details-frame">
+          <p class="behind-character-title"> Aithne </p>
+          <p class="behind-character-description">Aithne's name is the equivalent of fire in Gaelic.</p>
+        </div>
+      </div>
+
+      <!-------------------------------->
+      <div class="behind-section">
+        <div class="details-frame">
+          <p class="behind-character-title"> Bertrand</p>
+          <p class="behind-character-description">Bertrand's name is derived from the French lanaguage that has the meaning glorious and intelligent.</p>
+        </div>
+        
+      </div>
+    </div>
+
+    <!--FOOTER-->
+
+    <div class="section">
+      <div id="footer-frame" class="container">
+        <div class="footer-company">
+          <img id="footer-logo" src="/assets/images/IF Logo.png">
+          <p id="footer-copyright">Copyright Spring Studio 2023</p>
+        </div>
+      
+      <div class="footer-details">
+        <div class="footer-menu">
+          <p id="footer-menu"> Menu </p>
+          <a href="Home.html" id="footer-home"> Home </a>
+          <a href="AboutUs.html" id="footer-about-us"> AboutUs </a>
+        </div>
+  
+        <div class="footer-contact">
+          <p id="footer-contacts"> ContactUs </p>
+          <p id="footer-email"> abcd@gmail.com </p>
+          <p id="footer-contact-no"> +6397881037 </p>
+        </div>
+  
+        <div class="footer-follow-us">
+          <p id="footer-follow-us-title"> Follow Us </p>
+  
+          <div class="follow-us-icons">
+          <a href="https://www.facebook.com/profile.php?id=100093365902056&is_tour_dismissed=true">
+          <img id="iconFB" src="/assets/images/fb.png" alt="facebook.png">
+          </a>
+        </div>
+      </div>
+    </div>
+    </div>
+  </div>
+
+</body>
+</html>
