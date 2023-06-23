@@ -1,3 +1,33 @@
+@media screen and (min-width: 721px) {
+    :root {
+        --nav_top-margin-right: 5rem;
+        --nav_top-display: flex;
+        --img_logo-width: 5rem;
+        --img_logo-heigth: 5rem;
+    }
+}
+
+@media screen and (max-width: 720px) {
+    :root {
+        --nav_top-margin-right: 3rem;
+        --img_logo-width: 3rem;
+        --img_logo-heigth: 3rem;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    :root {
+        --nav_top-margin-right: 1rem;
+    }
+}
+
+@media screen and (max-width: 360px) {
+    :root {
+        --nav_top-margin-right: 1rem;
+        --nav_top-display: none;
+    }
+}
+
 :root {
     --jacarta: #3f3351;
     --dark-gunmetal: #1f1d36;
@@ -9,12 +39,12 @@
 
 @font-face {
     font-family: "Giffy";
-    src: url("/assets/fonts/Griffy-Regular.ttf");
+    src: url("../assets/fonts/Griffy-Regular.ttf");
 }
 
 @font-face {
     font-family: "SongMyung";
-    src: url("/assets/fonts/SongMyung-Regular.ttf");
+    src: url("../assets/fonts/SongMyung-Regular.ttf");
 }
 
 * {
@@ -25,4 +55,69 @@
 body {
     background-color: var(--jacarta);
     font-family: "SongMyung";
+}
+
+ul, ol {
+    list-style: none;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+a:hover {
+    color: var(--mystic-maroon);
+}
+
+a:active {
+    color: var(--russian-violet);
+}
+
+
+/* header, footer {
+    border: black solid 1px;
+}
+
+nav {
+    border: green solid 1px;
+}
+
+div {
+    border: red solid 1px;
+}
+
+ul, ol, li {
+    border: blue solid 1px;
+} */
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem;
+}
+
+#img-logo {
+    margin-left: 1rem;
+    margin-right: auto;
+    width: var(--img_logo-width);
+    height: var(--img_logo-heigth);
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+#nav-top {
+    display: var(--nav_top-display);
+    margin-left: auto;
+    margin-right: var(--nav_top-margin-right);
+}
+
+
+#nav-top ul {
+    display: flex;
+    align-items: center;
+}
+
+#nav-top ul li {
+    margin: 0 1rem;
 }
