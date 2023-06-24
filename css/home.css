@@ -1,0 +1,93 @@
+@media screen and (min-width: 721px) {
+    :root {
+    }
+}
+
+@media screen and (max-width: 900px) {
+    :root {
+    }
+}
+
+@media screen and (max-width: 720px) {
+    :root {
+    }
+}
+
+@media screen and (max-width: 480px) {
+    :root {
+    }
+}
+
+@media screen and (max-width: 360px) {
+    :root {
+    }
+}
+
+#content-primary {
+    display: flex;
+    align-items: center;
+    padding: 2rem;
+}
+
+#download-section {
+    margin-right: 1rem;
+}
+
+#text-game-title {
+    font: 3rem "Giffy";
+    margin: 0;
+    text-align: center;
+}
+
+#text-ads {
+    text-align: justify;
+}
+
+#img-tree {
+    width: 45rem;
+    height: 45rem;
+}
+
+#button-download {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--blue-violet);
+    width: fit-content;
+    margin: auto;
+    padding: 0.5rem 1.5rem;
+    border-radius: 15px;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    color: white;
+}
+
+#button-download img {
+    width: 1.5rem;
+    height: 1.5rem;
+    margin-right: 1rem;
+}
+
+#button-download p {
+    font-size: larger;
+}
+
+#button-download:active {
+    background-color: var(--russian-violet);
+    box-shadow: 0px 4px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.content-labels {
+    text-align: center;
+    font: xx-large "Giffy";
+}
+
+#content-plot {
+    margin: 3rem 2rem;
+}
+
+#text-plot {
+    text-align: center;
+    background-image: var(--purple-gradient);
+    padding: 2rem 5rem;
+    border-radius: 30px;
+}

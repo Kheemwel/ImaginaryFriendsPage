@@ -109,6 +109,9 @@ ul, ol, li {
 /* ************************************************************************************************** */
 /* For Header */
 header {
+    position: fixed;
+    top: 0;
+    width: 100%;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -198,5 +201,8 @@ footer div, footer nav {
 /* For Main Content */
 #main-content {
     margin: 1rem;
+    padding-top: 5rem;
     min-height: 100vh;
+    display: grid;
+    justify-content: center;
 }
