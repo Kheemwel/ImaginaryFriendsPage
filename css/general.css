@@ -4,6 +4,17 @@
         --nav_top-display: flex;
         --img_logo-width: 5rem;
         --img_logo-heigth: 5rem;
+        --footer-display: flex;
+        --footer-justify-content: space-between;
+        --footer_containers-margin-bottom: 0;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    :root {
+        --footer-display: grid;
+        --footer-justify-content: center;
+        --footer_containers-margin-bottom: 5rem;
     }
 }
 
@@ -50,15 +61,19 @@
 * {
     box-sizing: border-box;
 }
-    
 
 body {
     background-color: var(--jacarta);
     font-family: "SongMyung";
+    color: white;
+    padding: 0;
+    margin: 0;
 }
 
 ul, ol {
-    list-style: none;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
 }
 
 a {
@@ -74,7 +89,8 @@ a:active {
     color: var(--russian-violet);
 }
 
-
+/* ************************************************************************************************** */
+/* Container Markers */
 /* header, footer {
     border: black solid 1px;
 }
@@ -90,15 +106,17 @@ div {
 ul, ol, li {
     border: blue solid 1px;
 } */
-
+/* ************************************************************************************************** */
+/* For Header */
 header {
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 1rem;
+    background-color: var(--dark-gunmetal);
 }
 
-#img-logo {
+#header-logo {
     margin-left: 1rem;
     margin-right: auto;
     width: var(--img_logo-width);
@@ -106,18 +124,79 @@ header {
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 }
 
-#nav-top {
+#nav-header {
     display: var(--nav_top-display);
     margin-left: auto;
     margin-right: var(--nav_top-margin-right);
 }
 
 
-#nav-top ul {
+#nav-header ul {
+    display: flex;
+}
+
+#nav-header ul li {
+    margin: 0 1rem;
+}
+/* ************************************************************************************************** */
+/* For Footer */
+
+footer {
+    display: var(--footer-display);
+    justify-content: var(--footer-justify-content);
+    padding: 3rem 2rem;
+    margin-right: auto;
+    background-color: var(--dark-gunmetal);
+}
+
+footer div, footer nav {
+    margin-bottom: var(--footer_containers-margin-bottom);
+}
+
+.footer-labels {
+    text-align: center;
+    font-size: x-large;
+}
+
+#footer-copyright {
+    text-align: center;
+}
+
+#footer-logo {
+    width: var(--img_logo-width);
+    height: var(--img_logo-heigth);
+}
+
+#nav-footer ul {
+    text-align: center;
+}
+
+#footer-contacts ul li {
     display: flex;
     align-items: center;
 }
 
-#nav-top ul li {
-    margin: 0 1rem;
+#footer-contacts ul li img {
+    width: 1rem;
+    height: 1rem;
+    margin-right: 1rem;
+}
+
+#footer-follow ul {
+    display: flex;
+    justify-content: center;
+}
+
+#footer-follow ul li {
+}
+
+#footer-follow ul li img{
+    width: 2rem;
+    height: 2rem;
+}
+/* ************************************************************************************************** */
+/* For Main Content */
+#main-content {
+    margin: 1rem;
+    min-height: 100vh;
 }
