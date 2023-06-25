@@ -1,79 +1,88 @@
 @media screen and (min-width: 721px) {
     :root {
+        --content-primary--display: flex;
+        --img-tree--size: 45rem;
+        --text-plot--padding: 2rem 5rem;
+        --text-about--padding: 0 5rem;
+        --text-game-title--size: 3rem;
+        --download-section--margin-right: 1rem;
+        --download-button--font-size: larger;
+        --download-button--img-size: 1.5rem;
     }
 }
 
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 1080px) {
     :root {
+        --content-primary--display: grid;
+        --download-section--margin-right: 0;
+        --img-tree--size: 35rem;
     }
 }
 
 @media screen and (max-width: 720px) {
     :root {
+        --text-plot--padding: 1rem 2.5rem;
+        --text-about--padding: 0 3rem;
+        --text-game-title--size: 2.5rem;
+        --img-tree--size: 25rem;
+        --download-button--font-size: large;
+        --download-button--img-size: 1rem;
     }
 }
 
 @media screen and (max-width: 480px) {
     :root {
+        --img-tree--size: 15rem;
+        --text-plot--padding: 1rem 2rem;
+        --text-about--padding: 0 2.5rem;
+        --text-game-title--size: 2rem;
     }
 }
 
 @media screen and (max-width: 360px) {
     :root {
+        --text-plot--padding: 1rem 1.5rem;
+        --text-about--padding: 0 1.5rem;
     }
 }
 
 #content-primary {
-    display: flex;
+    display: var(--content-primary--display);
     align-items: center;
-    padding: 2rem;
+    margin: 3rem 2rem;
 }
 
 #download-section {
-    margin-right: 1rem;
+    margin-right: var(--download-section--margin-right);
 }
 
 #text-game-title {
-    font: 3rem "Giffy";
+    font-family: "Giffy";
+    font-size: var(--text-game-title--size);
     margin: 0;
     text-align: center;
 }
 
 #text-ads {
-    text-align: justify;
+    text-align: center;
 }
 
 #img-tree {
-    width: 45rem;
-    height: 45rem;
+    width: var(--img-tree--size);
+    height: var(--img-tree--size);
+    margin: auto;
 }
 
 #button-download {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: var(--blue-violet);
-    width: fit-content;
     margin: auto;
-    padding: 0.5rem 1.5rem;
-    border-radius: 15px;
-    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
-    color: white;
+    font-size: var(--download-button--font-size);
+    margin-bottom: 1rem;
 }
 
 #button-download img {
-    width: 1.5rem;
-    height: 1.5rem;
+    width: var(--download-button--img-size);
+    height: var(--download-button--img-size);
     margin-right: 1rem;
-}
-
-#button-download p {
-    font-size: larger;
-}
-
-#button-download:active {
-    background-color: var(--russian-violet);
-    box-shadow: 0px 4px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
 .content-labels {
@@ -88,6 +97,21 @@
 #text-plot {
     text-align: center;
     background-image: var(--purple-gradient);
-    padding: 2rem 5rem;
+    padding: var(--text-plot--padding);
     border-radius: 30px;
+}
+
+#content-about {
+    margin: 3rem 3rem;
+    display: grid;
+    justify-content: center;
+}
+
+#text-about {
+    text-align: center;
+    padding: var(--text-about--padding);
+}
+
+#button-view-more {
+    margin: auto;
 }
