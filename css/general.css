@@ -144,11 +144,6 @@ header {
     position: fixed;
     right: 2rem;
 }
-
-#button-hamburger img {
-    width: 2rem;
-    height: 2rem;
-}
 /* ************************************************************************************************** */
 /* For Footer */
 
@@ -197,9 +192,7 @@ footer div, footer nav {
     align-items: center;
 }
 
-#footer-contacts ul li img {
-    width: 1rem;
-    height: 1rem;
+#footer-contacts ul li i {
     margin-right: 1rem;
 }
 
@@ -207,11 +200,7 @@ footer div, footer nav {
     display: flex;
     flex-direction: row;
     justify-content: center;
-}
-
-#footer-follow ul li img{
-    width: 2rem;
-    height: 2rem;
+    align-items: center;
 }
 /* ************************************************************************************************** */
 /* For Main Content */
