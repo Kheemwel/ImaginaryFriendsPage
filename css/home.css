@@ -7,17 +7,13 @@
 
 #download-section {
     margin-right: 1rem;
+    text-align: center;
 }
 
 #text-game-title {
     font-family: "Giffy";
     font-size: 3rem;
     margin: 0;
-    text-align: center;
-}
-
-#text-summary {
-    text-align: center;
 }
 
 #img-tree {
