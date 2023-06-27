@@ -21,8 +21,8 @@
 }
 
 #img-tree {
-    width: 45rem;
-    height: 45rem;
+    width: 60%;
+    height: 60%;
     margin: auto;
 }
 
@@ -85,12 +85,6 @@
     #download-section {
         margin-right: 0;
     }
-
-    #img-tree {
-        width: 35rem;
-        height: 35rem;
-        margin: auto;
-    }
 }
 /* ************************************************************************************************** */
 @media screen and (max-width: 720px) {
@@ -111,12 +105,6 @@
     #text-about {
         text-align: center;
         padding: 0 3rem;
-    }
-
-    #img-tree {
-        width: 25rem;
-        height: 25rem;
-        margin: auto;
     }
 
     #button-download {
@@ -150,12 +138,6 @@
     #text-about {
         text-align: center;
         padding: 0 2.5rem;
-    }
-
-    #img-tree {
-        width: 15rem;
-        height: 15rem;
-        margin: auto;
     }
 
     #button-download {

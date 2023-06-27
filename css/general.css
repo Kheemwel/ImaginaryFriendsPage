@@ -73,7 +73,7 @@ a:active {
 
 /* ************************************************************************************************** */
 /* Container Markers */
-header, footer {
+/* header, footer, section {
     border: black solid 1px;
 }
 
@@ -81,7 +81,7 @@ nav {
     border: green solid 1px;
 }
 
-div {
+div{
     border: red solid 1px;
 }
 
@@ -91,13 +91,14 @@ ul, ol, li {
 
 p {
     border: yellow solid 1px;
-}
+} */
 /* ************************************************************************************************** */
 /* For Header */
 header {
     position: fixed;
     top: 0;
     width: 100%;
+    height: 6rem;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -179,12 +180,15 @@ footer div, footer nav {
 }
 
 #nav-footer ul {
+    display: flex;
+    flex-direction: column;
     text-align: center;
 }
 
 #footer-contacts ul {
     display: flex;
     flex-direction: column;
+    align-items: center;
 }
 
 #footer-contacts ul li {
@@ -205,9 +209,6 @@ footer div, footer nav {
     justify-content: center;
 }
 
-#footer-follow ul li {
-}
-
 #footer-follow ul li img{
     width: 2rem;
     height: 2rem;
@@ -216,7 +217,7 @@ footer div, footer nav {
 /* For Main Content */
 #main-content {
     margin: 1rem;
-    padding-top: 5rem;
+    margin-top: 7rem;
     min-height: 100vh;
     display: flex;
     flex-direction: column;
@@ -252,14 +253,14 @@ footer div, footer nav {
     #header-logo {
         margin-left: 1rem;
         margin-right: auto;
-        width: 3rem;
-        height: 3rem;
+        width: 4rem;
+        height: 4rem;
         filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
     }
 
     #footer-logo {
-        width: 3rem;
-        height: 3rem;
+        width: 4rem;
+        height: 4rem;
     }
 }
 /* ************************************************************************************************** */
@@ -276,7 +277,7 @@ footer div, footer nav {
     #nav-header {
         position: fixed;
         left: -100%;
-        top: 5rem;
+        top: 6rem;
         width: 100%;
         height: 100%;
         background-color: var(--dark-gunmetal);
@@ -285,7 +286,8 @@ footer div, footer nav {
     }
 
     #nav-header ul {
-        display: block;
+        display: flex;
+        flex-direction: column;
     }
     
     #nav-header ul li {

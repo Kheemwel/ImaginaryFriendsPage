@@ -1,0 +1,50 @@
+#img-company-logo {
+    width: 100%;
+    height: 100%;
+    border-radius: 30px;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    margin-bottom: 5rem;
+}
+
+#text-about {
+    text-align: center;
+    font-size: x-large;
+    margin-bottom: 5rem;
+}
+
+#section-founders {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#section-founders img {
+    width: 35%;
+    height: 35%;
+}
+
+#section-founders-label {
+    text-align: center;
+    font: xx-large "Giffy";
+}
+
+.text-founders-name {
+    font: x-large "Giffy";
+}
+
+.section-founders-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 2rem;
+}
+
+.section-founders-container div {
+    display: flex;
+    flex-direction: column;
+}
+
+.section-founders-container div p {
+    margin: 0;
+}
