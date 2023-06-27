@@ -50,6 +50,7 @@ a:active {
 
 .button {
     display: flex;
+    flex-direction: row;
     align-items: center;
     justify-content: center;
     background-color: var(--blue-violet);
@@ -72,7 +73,7 @@ a:active {
 
 /* ************************************************************************************************** */
 /* Container Markers */
-/* header, footer {
+header, footer {
     border: black solid 1px;
 }
 
@@ -90,7 +91,7 @@ ul, ol, li {
 
 p {
     border: yellow solid 1px;
-} */
+}
 /* ************************************************************************************************** */
 /* For Header */
 header {
@@ -98,6 +99,7 @@ header {
     top: 0;
     width: 100%;
     display: flex;
+    flex-direction: row;
     align-items: center;
     justify-content: space-between;
     padding: 1rem;
@@ -114,12 +116,14 @@ header {
 
 #nav-header {
     display: flex;
+    flex-direction: row;
     margin-left: auto;
     margin-right: 5rem;
 }
 
 #nav-header ul {
     display: flex;
+    flex-direction: row;
 }
 
 #nav-header ul li {
@@ -149,6 +153,7 @@ header {
 
 footer {
     display: flex;
+    flex-direction: row;
     justify-content: space-between;
     padding: 3rem 2rem;
     margin-right: auto;
@@ -177,8 +182,14 @@ footer div, footer nav {
     text-align: center;
 }
 
+#footer-contacts ul {
+    display: flex;
+    flex-direction: column;
+}
+
 #footer-contacts ul li {
     display: flex;
+    flex-direction: row;
     align-items: center;
 }
 
@@ -190,6 +201,7 @@ footer div, footer nav {
 
 #footer-follow ul {
     display: flex;
+    flex-direction: row;
     justify-content: center;
 }
 
@@ -206,7 +218,8 @@ footer div, footer nav {
     margin: 1rem;
     padding-top: 5rem;
     min-height: 100vh;
-    display: grid;
+    display: flex;
+    flex-direction: column;
     justify-content: center;
 }
 /* ************************************************************************************************** */
@@ -215,7 +228,8 @@ footer div, footer nav {
 /* Media Queries */
 @media screen and (max-width: 900px) {
     footer {
-        display: grid;
+        display: flex;
+        flex-direction: column;
         justify-content: center;
         padding: 3rem 2rem;
         margin-right: auto;
@@ -230,6 +244,7 @@ footer div, footer nav {
 @media screen and (max-width: 720px) {
     #nav-header {
         display: flex;
+        flex-direction: row;
         margin-left: auto;
         margin-right: 3rem;
     }
@@ -251,6 +266,7 @@ footer div, footer nav {
 @media screen and (max-width: 480px) {
     #nav-header {
         display: flex;
+        flex-direction: row;
         margin-left: auto;
         margin-right: 1rem;
     }
